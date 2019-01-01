@@ -1,0 +1,34 @@
+{
+  "project": "knowledge-graph",
+  "services": [
+    {
+      "id": "fuseki",
+      "apps": [
+        {
+          "id": "app",
+          "image": "stain/jena-fuseki",
+          "instances": 1,
+          "mem": 2048,
+          "domain": {
+            "uri": "kg-fuseki.sloppy.zone"
+          },
+          "ssl": false,
+          "port_mappings": [
+            {
+              "container_port": 3030
+            }
+          ],
+          "volumes": [
+            {
+              "container_path": "/fuseki",
+              "size": "8GB"
+            }
+          ],
+          "health_checks": [
+          ],
+          "logging": null
+        }
+      ]
+    }
+  ]
+}

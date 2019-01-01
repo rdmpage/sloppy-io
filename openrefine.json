@@ -1,0 +1,30 @@
+{
+  "project": "openrefine",
+  "services": [
+    {
+      "id": "spaziodati",
+      "apps": [
+        {
+          "id": "openrefine",
+          "image": "spaziodati/openrefine",
+          "instances": 0,
+          "mem": 64,
+          "domain": {
+            "uri": "openrefine.sloppy.zone"
+          },
+          "ssl": false,
+          "port_mappings": [
+            {
+              "container_port": 3333
+            }
+          ],
+          "volumes": [
+          ],
+          "health_checks": [
+          ],
+          "logging": null
+        }
+      ]
+    }
+  ]
+}

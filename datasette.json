@@ -1,0 +1,30 @@
+{
+  "project": "datasette",
+  "services": [
+    {
+      "id": "ipni",
+      "apps": [
+        {
+          "id": "names",
+          "image": "rdmpage/ipni",
+          "instances": 0,
+          "mem": 256,
+          "domain": {
+            "uri": "ipni.sloppy.zone"
+          },
+          "ssl": false,
+          "port_mappings": [
+            {
+              "container_port": 8001
+            }
+          ],
+          "volumes": [
+          ],
+          "health_checks": [
+          ],
+          "logging": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,2 +1,4 @@
 # sloppy-io
-Sloppy.io projects
+
+
+Backup of https://sloppy.io projects.
